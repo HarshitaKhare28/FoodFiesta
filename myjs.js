@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const secondaryOrderButtons = document.querySelectorAll('.sec-button');
 
     primaryOrderButton.addEventListener('click', () => {
-        alert('Order Now button clicked from primary section!');
+        alert('Please Select a meal.');
     });
 
     secondaryOrderButtons.forEach(button => {
         button.addEventListener('click', () => {
-            alert('Order Now button clicked from secondary section!');
+            alert('Your food is being processed!');
         });
     });
     const navLinks = document.querySelectorAll('nav ul li a');

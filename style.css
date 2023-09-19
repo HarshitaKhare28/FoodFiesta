@@ -1,0 +1,242 @@
+ /* Css Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Css Variables */
+:root{
+    --navbar-height: 60px;
+}
+/*Navbar*/
+#navbar{
+    display: flex;
+    align-content: center;
+    color: #e97777;
+    position:relative;
+}
+#navbar::before{
+    content:"";
+    position: absolute;
+    height:100%;
+    width:100%;
+    background-color: rgb(104, 59, 5);
+    opacity: 0.7; 
+    z-index: -1;
+   
+ }
+/* Navigation bar: logo and image */
+#logo{
+    margin: 10px 9px;
+
+}
+#logo img{
+    height:91px;
+    margin:15px 8px;
+    border-radius: 37px;
+}
+/* Navigation bar: list Styling */
+#navbar ul{
+    display: flex;
+    margin-top: 40px;
+    
+}
+#navbar ul li{
+    color:rgb(246, 241, 241);
+    list-style-type: none;
+    font-size: x-large;
+    font-family: 'Croissant One', sans-serif;
+    font-weight: 900;
+    font-weight: 3000;
+}
+#navbar ul li a{
+    display:block;
+    color:rgb(249, 246, 246);
+    list-style-type: none;
+    padding:4px;
+    margin:-1px 17px;
+}
+#navbar ul li a:hover{
+    color:rgb(15, 13, 13);
+    background-color: rgb(241, 180, 106);
+    padding:20px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:5px 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    position: absolute;
+    height:100%;
+    width:100%;
+    background:url(../Images/image3.jpg) no-repeat center center/cover;
+    opacity: 0.78; 
+    z-index: -1;
+}
+#home h1{ 
+    margin-top:200px;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    font-family: 'Croissant One', sans-serif;
+}
+#home p{
+    color: rgb(8, 8, 8);
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: 'Croissant One', sans-serif;
+}
+/* Services Section */
+#services-container{
+    background-color: blanchedalmond;
+}
+#services-container h1{
+    text-align: center;
+    font-size: 3.5rem;
+    padding:5px;
+    margin-top:100px;
+    justify-content: center;
+    font-family: 'Croissant One', sans-serif;
+}
+#Meals{
+    margin:30px 30px;
+}
+#Meals h2{
+    margin:50px 50px;
+    font-size: 2.5rem;
+    padding:12px;
+    text-align: center;
+}
+#Meals .best-offers{
+    display:flex;
+    padding:10px 10px;
+    border:5px solid rgb(8, 7, 6);
+    background-color: rgb(216, 174, 119);
+    border-radius: 20px;
+}
+#Meals .box{
+    display: flexbox;
+}
+#Meals .box img{
+    border:5px solid rgb(247, 243, 246);
+    display:flex;
+    height:220px;
+    margin:20px 20px;
+    display:block;
+    border-radius: 20px;
+    width: 300px;
+}
+#Meals .box p{
+    font-family: 'Croissant One', sans-serif;
+    font-size: 1.25rem; 
+}
+#Meals .sec-button{
+    margin:50px;
+    padding: 6px 20px;
+    border: 5px solid rgb(249, 247, 247);
+    background-color:  rgb(241, 180, 106);;
+    color:rgb(4, 4, 37);
+    border-radius: 20px;
+    font-family: 'Croissant One', sans-serif;
+    font-size: 1.35rem;
+    cursor: pointer;
+}
+#Meals .sec-button:hover{
+        background-color:#db2b2b;
+        color:rgb(250, 246, 246);
+        transition:0.5s;
+        padding:15px 15px;
+        align-items: center;
+}
+#Meals h2{
+    margin:1px 50px;
+    font-size: 2.5rem;
+    padding:6px;
+    text-align: center;
+}
+
+/* Utility Classes */
+.h-primary{
+    text-align: center;
+    font-size: 3.5rem;
+    padding:12px;
+    margin-top:150px;
+    justify-content: center;
+    font-family: 'Croissant One', sans-serif;
+}
+.h-secondary{
+    font-family: 'Croissant One', sans-serif;
+}
+.button{
+    margin:50px;
+    padding: 6px 20px;
+    border: 5px solid black;
+    background-color:  rgb(241, 180, 106);;
+    color:rgb(4, 4, 37);
+    border-radius: 20px;
+    font-family: 'Croissant One', sans-serif;
+    font-size: 1.35rem;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #db2b2b;
+    color:rgb(251, 247, 247);
+    transition:0.5s;
+    padding:15px 15px;
+    align-items: center;
+}
+center{
+    text-align: center;
+}
+/* About section */
+#about-us .aboutus{
+    display:flex;
+    border:5px solid orange;
+    border-radius: 20px;
+    background-color: rgb(174, 248, 224);
+}
+#about-us .aboutus img{
+    width:400px;
+}
+#about-us h1{
+    text-align: center;
+    font-size: 3.5rem;
+    padding:5px;
+    margin: top 3px;
+    justify-content: center;
+    font-family: 'Croissant One', sans-serif;
+}
+#about-us p{
+    font-family: 'Croissant One', sans-serif;
+    font-size: 1.25rem; 
+    text-align: center;   
+    margin:20px 50px; 
+}
+#contact-us{
+    background-color: bisque;
+}
+#contact-us h1{
+    text-align: center;
+    font-size: 3.5rem;
+    padding:5px;
+    margin: 3px;
+    justify-content: center;
+    font-family: 'Croissant One', sans-serif;
+}
+#contact-us h3{
+    margin: 3px 186px;
+    font-family: 'Croissant One', sans-serif;
+    text-align: center;
+}
+#contact-us p{
+    padding: 2px 11px;
+    margin: -12px 20px;
+    font-family: 'Croissant One', sans-serif;
+    text-align: center;
+}
